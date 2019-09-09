@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {% include common_head.html %}
+  </head>
+  <body>
+    {% include navbar.html %}
+    {{ content }}
+
+    {% for post in site.posts %}
+    <div class="card text-white bg-dark mb-3 mx-3">
+        <a href="{{ post.url }}" class="post-title">{{ post.title }}</a>
+        <h2>{{ post.date | date: "%B %d, %Y"}}</h2>
+        {{ post.excerpt }}
+
+        {% if post.content contains post.excerpt_separator %}
+        <p>
+            <a href="{{ post.url }}">Read more...</a>
+        </p>
+        {% endif %}
+    </div>
+    {% endfor %}
+  </body>
+</html>
