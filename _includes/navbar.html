@@ -1,4 +1,21 @@
-<nav class="navbar navbar-dark bg-dark">
-    <a class="navbar-brand" href="/">Project Legato</a>
-    <a class="nav-link" href="mailto:eash@projectlegato.com">Contact Me</a>
+<nav class="navbar navbar-expand navbar-dark bg-dark intro">
+    <a class="navbar-brand" href="/" style="font-size: 2vh;">Project Legato</a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    List of Blog Posts
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    {% for post in site.posts reversed %}
+                        <a class="dropdown-item" href="{{ post.url }}">{{ forloop.index }}. {{ post.title }}</a>
+                    {% endfor %}
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="mailto:eash@projectlegato.com">Contact Me</a>
+            </li>
+        </ul>
+    </div>
+    
 </nav>

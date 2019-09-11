@@ -5,20 +5,35 @@
   </head>
   <body>
     {% include navbar.html %}
-    {{ content }}
 
-    {% for post in site.posts %}
-    <div class="card text-white bg-dark mb-3 mx-3">
-        <a href="{{ post.url }}" class="post-title">{{ post.title }}</a>
-        <h2>{{ post.date | date: "%B %d, %Y"}}</h2>
-        {{ post.excerpt }}
+    <div class="container-fluid">
+      <div class="row">
+    
+        <div class="col" id="main">
 
-        {% if post.content contains post.excerpt_separator %}
-        <p>
-            <a href="{{ post.url }}">Read more...</a>
-        </p>
-        {% endif %}
+          <div class="intro">
+          {{ content }}
+          </div>
+    
+          {% for post in site.posts %}
+          <div class="card text-white bg-dark mb-3 mx-auto">
+              <a href="{{ post.url }}" class="post-title">{{ post.title }}</a>
+              <h2>{{ post.date | date: "%B %d, %Y"}}</h2>
+              <div class="intro">
+                {{ post.excerpt }}
+              </div>
+    
+              {% if post.content contains post.excerpt_separator %}
+              <p class="intro">
+                  <a href="{{ post.url }}">Read more...</a>
+              </p>
+              {% endif %}
+          </div>
+          {% endfor %}
+    
+        </div>
+      </div>
     </div>
-    {% endfor %}
+    
   </body>
 </html>

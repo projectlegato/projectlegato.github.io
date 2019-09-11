@@ -31,3 +31,11 @@ a.post-title {
 a.post-title:hover {
     color: lightslategray;
 }
+
+.card {
+    width: 60vw;
+}
+
+.intro {
+    font-size: 1.5vh;
+}
