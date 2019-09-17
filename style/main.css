@@ -21,7 +21,11 @@ h1 {
 }
 
 h2 {
-    color: lightslategray;
+    color: white;
+}
+
+h3 {
+    color: lightgray;
 }
 
 a.post-title {
