@@ -6,7 +6,7 @@
       setTimeout(() => 
       {
           $("a").each(function(elt){
-              if (!$(this).hasClass("navbar-brand")){
+              if (!$(this).hasClass("navbar-brand") && !$(this).hasClass("nav-link") && !$(this).hasClass("dropdown-item")){
                   $(this).attr("target", "_blank");
               }
           });
@@ -15,8 +15,13 @@
   </head>
   <body>
     {% include navbar.html %}
-    <h1>{{ page.title }}</h1>
-    <p style="color: lightgray;">{{ page.date | date: "%B %d, %Y"}}</p>
-    {{ page.content }}
+
+    <div class="pt-5">
+      <div class="pt-5">
+        <h1>{{ page.title }}</h1>
+        <p style="color: lightgray;">{{ page.date | date: "%B %d, %Y"}}</p>
+        {{ page.content }}
+      </div>
+    </div>
   </body>
 </html>

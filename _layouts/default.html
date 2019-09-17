@@ -6,8 +6,8 @@
   <body>
     {% include navbar.html %}
 
-    <div class="container-fluid">
-      <div class="row">
+    <div class="container-fluid pt-5">
+      <div class="row pt-5">
     
         <div class="col" id="main">
 
@@ -16,9 +16,10 @@
           </div>
     
           {% for post in site.posts %}
-          <div class="card text-white bg-dark mb-3 mx-auto">
+          <div class="card text-white bg-dark mb-5 mx-auto py-2 rounded">
               <a href="{{ post.url }}" class="post-title">{{ post.title }}</a>
-              <h2>{{ post.date | date: "%B %d, %Y"}}</h2>
+              <h5>{{ post.date | date: "%B %d, %Y"}}</h5>
+              <br/>
               <div class="intro">
                 {{ post.excerpt }}
               </div>
