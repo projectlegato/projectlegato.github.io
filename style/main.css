@@ -1,4 +1,4 @@
-h1, h2, h3, h4, h5, p, pre, .post-title {
+h1, h2, h3, h4, h5, p, pre, .post-title, ol {
     margin-right: 10vw;
     margin-left: 10vw;
 }
@@ -17,6 +17,7 @@ a.nav-link {
 
 h1 {
     color: white;
+    font-size: 3.5vh; 
 }
 
 h2 {
@@ -38,4 +39,28 @@ a.post-title:hover {
 
 .intro {
     font-size: 1.5vh;
+}
+
+.promo {
+    font-size: 2.5vh;
+}
+
+#project-legato {
+    font-size: 4vh;
+}
+
+ol a {
+    color: white;
+}
+
+ol a:hover {
+    color: lightslategray;
+}
+
+h3 a {
+    color: lightgray;
+}
+
+h3 a:hover {
+    color: lightslategray;
 }
