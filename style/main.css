@@ -1,4 +1,4 @@
-h1, h2, h3, h4, h5, p, pre, .post-title, ol {
+h1, h2, h3, h4, h5, p, pre, .post-title, ol, ul {
     margin-right: 10vw;
     margin-left: 10vw;
 }
@@ -67,4 +67,8 @@ h3 a {
 
 h3 a:hover {
     color: lightslategray;
+}
+
+img {
+    max-width: 50vw;
 }
