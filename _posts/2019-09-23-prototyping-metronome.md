@@ -20,7 +20,7 @@ And I worked on creating a system for placing drum hits on a repeating metronome
 
 I started off by creating a metronome:
 
-![metronome in unity](/img/2019-09-21-metronome.gif)
+![metronome in unity](/assets/image/2019-09-23-metronome.gif)
 
 This metronome runs at 120 bpm (2 beats per second). There's no audio here so far; I simply made sure the metronome could handle the difference between the down beat (which gets highlighted green) and the other beats (which get highlighted black).
 
@@ -34,7 +34,7 @@ I downloaded some sounds from [freesound](https://freesound.org):
 
 To connect Wwise to my Unity project, it was actually as simple as going to the "Unity" tab in Wwise and selecting "Integrate into Unity Project".
 
-![integrating wwise into unity project](/img/2019-09-21-integrating-wwise.png)
+![integrating wwise into unity project](/assets/image/2019-09-23-integrating-wwise.png)
 
 Then, I could relaunch Unity and launch Wwise and get to work!
 
@@ -42,7 +42,7 @@ In Wwise, I added the sounds I downloaded and was able to use Wwise's mixer to b
 
 Then, I created events in Wwise that related to playing the three different sounds: the metronome on either beat 1, or beat 2/3/4; and the bass drum.
 
-![wwise events](/img/2019-09-21-wwise-events.png)
+![wwise events](/assets/image/2019-09-23-wwise-events.png)
 
 ## Unity, Part 2
 
@@ -50,7 +50,7 @@ Once I made the events, I went into Unity and found the Wwise plugin had been su
 
 I saw that a `WwiseGlobal` object had been added to the scene:
 
-![WwiseGlobal](/img/2019-09-21-inspector.png)
+![WwiseGlobal](/assets/image/2019-09-23-inspector.png)
 
 I thought I'd be all set to go ahead! I went into the C# script where I process the downbeat of the metronome and added the following line:
 
@@ -64,7 +64,7 @@ This was alarming as I thought I had been following the (notably well written) [
 
 Firstly, I had to use the Wwise Unity plugin to generate a package of sounds and associated events called a "SoundBank" into my project; and then I had to add the SoundBank as a component to an object in the scene (I added it to the `WwiseGlobal` object).
 
-![Generating SoundBank](/img/2019-09-21-soundbank.png)
+![Generating SoundBank](/assets/image/2019-09-23-soundbank.png)
 
 Finally, I had to ensure that following the posting of the event, I called the `AkSoundEngine::RenderAudio` function.
 
@@ -88,7 +88,7 @@ Next, I added a bass drum object with colliders on every beat, that subscribed t
 
 The bass drum object looked like this in the scene:
 
-![bass drum in unity](/img/2019-09-21-bassdrumadded.png)
+![bass drum in unity](/assets/image/2019-09-23-bassdrumadded.png)
 
 This was my callback in the bass drum:
 
