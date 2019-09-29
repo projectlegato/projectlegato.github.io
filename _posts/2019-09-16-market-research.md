@@ -49,7 +49,7 @@ Tonara is estimated to make about $4.4m USD a year.
 
 ### [Choice Provisions](https://totallychoice.com)
 
-Formerly Gaijin Games, this game studio is behind the BIT.TRIP series of games. The first game, BIT.TRIP RUNNER, is a rhythm-based platforming game.
+Formerly Gaijin Games, this game studio is behind the BIT.TRIP series of games. The fourth game, BIT.TRIP RUNNER, is a rhythm-based platforming game.
 
 Revenue information for Choice Provisions was unable to be found.
 
