@@ -45,7 +45,7 @@ From here, I worked on setting up an event/messaging system between the level an
 With my system complete, I'm now able to place bass drum hits on the 4 beats and have them correspond to the player jumping on those beats in the level view! A video showing this is below.
 
 
-<video width="400" height="225" src="/assets/videos/2019-10-01-beats-and-jumps.mp4" type="video/mp4"></video>
+<video width="400" height="225" src="/assets/videos/2019-10-02-beats-and-jumps.mp4" type="video/mp4"></video>
 
 
 ## Next Steps
