@@ -2,7 +2,7 @@
 layout: post
 title:  "Prototyping: Translating Drums To Platforming"
 excerpt_separator: <!--more-->
-videoId: 18RTouMMh-misfS5Zyj91aE7gJ7eBt8N1
+videoId: QLQLAu1xzVA
 ---
 
 Prototyping work continued this week as I explored mapping placing instruments in the "DAW" like editor from last week to inputs given to a player on a platforming level.
@@ -43,10 +43,9 @@ The user is able to switch between the two, and when the player is in the level 
 
 From here, I worked on setting up an event/messaging system between the level and editor view so that each instrument could map itself to a Wwise sound event AND a player action, both to occur on a specific beat. I tried to work on writing this system at a decent enough level that it would be somewhat salvageable in the future when I try to add more instruments.
 
-With my system complete, I'm now able to place bass drum hits on the 4 beats and have them correspond to the player jumping on those beats in the level view! A video showing this is below.
+With my system complete, I'm now able to place bass drum hits on the 4 beats and have them correspond to the player jumping on those beats in the level view! A link to a video showing this is below.
 
-
-{% include gdriveplayer.html id=page.videoId %}
+{% include ytembed.html id=page.videoId %}
 
 
 ## Next Steps
