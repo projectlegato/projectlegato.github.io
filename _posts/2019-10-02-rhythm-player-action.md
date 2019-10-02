@@ -2,6 +2,7 @@
 layout: post
 title:  "Prototyping: Translating Drums To Platforming"
 excerpt_separator: <!--more-->
+videoId: 18RTouMMh-misfS5Zyj91aE7gJ7eBt8N1
 ---
 
 Prototyping work continued this week as I explored mapping placing instruments in the "DAW" like editor from last week to inputs given to a player on a platforming level.
@@ -45,7 +46,7 @@ From here, I worked on setting up an event/messaging system between the level an
 With my system complete, I'm now able to place bass drum hits on the 4 beats and have them correspond to the player jumping on those beats in the level view! A video showing this is below.
 
 
-<video width="400" height="225" src="/assets/videos/2019-10-02-beats-and-jumps.mp4" type="video/mp4"></video>
+{% include gdriveplayer.html id=page.videoId %}
 
 
 ## Next Steps
