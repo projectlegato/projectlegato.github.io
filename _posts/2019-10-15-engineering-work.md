@@ -23,18 +23,30 @@ Thirdly, I see **a lot of potential in the rhythm game**. I truly feel that by f
 
 With the new project scope in mind, here's the general list of things (in no particular order) that I'd like to accomplish in the coming weeks:
 
-1. Generalize the metronome system
-   * The metronome system should be abstracted such that I can either give it a simple meter and have it subdivide into eighth notes (1), or can give it a number of eighth notes per measure and specify which eighth notes are to be emphasized (2).
-   * (2) seems like it'd be slightly simpler to implement, and seeing as I'll be the one using it for level design, I think I'll have an easier time using this (note that the second can be used to do the first - e.g. measure with 8 eighth notes, emphasis on the 0th, 2nd, 4th, and 6th for example.)
-2. Scrolling
-   * In order to let more complicated levels exist, I'll have to create a system to scroll left-right to view more eighth notes. This will scroll both the level and the game.
-   * In order to have enough space for all the instruments, The instrument view should be vertically scrolling to let more instruments be seen?
-     * this will need to be explored to see if that's the best approach. 
-3. Learn more about drums
-   * I'm gonna reach out to friends who are percussionists to get a better understanding of what they find to be important things that I should keep in mind for Project Legato.
-4. Finalize/make concrete the set of instruments/gameplay mechanics
-   * Currently, I have [bassdrum]/[jump] and [snare]/[shoot]. I'd like to properly determine which instruments should be included and design game mechanics and potential levels that utilize the game mechanics
-   * The approach for this should be to first figure out the important drum beats (from part 2 above) and from the instruments required for that, do level design.
+### 1. Generalize the metronome system
+
+
+The metronome system should be abstracted such that I can either give it a simple meter and have it subdivide into eighth notes (1), or can give it a number of eighth notes per measure and specify which eighth notes are to be emphasized (2).
+
+(2) seems like it'd be slightly simpler to implement, and seeing as I'll be the one using it for level design, I think I'll have an easier time using this (note that the second can be used to do the first - e.g. measure with 8 eighth notes, emphasis on the 0th, 2nd, 4th, and 6th for example.)
+
+### 2. Scrolling
+
+In order to let more complicated levels exist, I'll have to create a system to scroll left-right to view more eighth notes. This will scroll both the level and the game.
+
+In order to have enough space for all the instruments, The instrument view should be vertically scrolling to let more instruments be seen?
+
+This will need to be explored to see if that's the best approach. 
+
+### 3. Learn more about drums
+  
+I'm gonna reach out to friends who are percussionists to get a better understanding of what they find to be important things that I should keep in mind for Project Legato.
+
+### 4. Finalize/make concrete the set of instruments/gameplay mechanics
+   
+Currently, I have [bassdrum]/[jump] and [snare]/[shoot]. I'd like to properly determine which instruments should be included and design game mechanics and potential levels that utilize the game mechanics
+
+The approach for this should be to first figure out the important drum beats (from part 2 above) and from the instruments required for that, do level design.
 
 
 ## Engineering Work: Metronome Redesign
