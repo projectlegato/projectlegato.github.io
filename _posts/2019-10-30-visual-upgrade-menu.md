@@ -27,7 +27,7 @@ Additionally, I began implementing a pause button for players who will want to o
 
 ## Hi-Hat: Design Problems
 
-![hi-hat sprite](../assets/images/2019-10-30-cymbal.png)
+![hi-hat sprite](/assets/images/2019-10-30-cymbal.png)
 
 I ran into a bit of a brick wall this week when implementing the hi-hat cymbal. I added the sound in Wwise, implemented the `InstrumentController` class I mentioned last week, and got a visual representation going.
 
