@@ -13,7 +13,8 @@ This week, I worked on designing my poster for the end-of-semester design expo t
 
 * I've decided that for every level, the behavior of an instrument's numbers is consistent (e.g. bass drum always 10 on center, 5 on outside).
 * Fixed bugs with muting the metronome not working
-* You can now mute all game audio during a level.
+* Players can now mute all game audio during a level.
+* Players can now clear all of their save data if they wish.
 * When a tutorial popup is up, the level itself is not visible.
 
 ## Levels
