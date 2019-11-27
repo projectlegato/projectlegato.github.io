@@ -1,0 +1,16 @@
+{
+"companyName": "Eashwar Mohan",
+"productName": "GridBeat",
+"productVersion": "0.1",
+"dataUrl": "1a4ef8916d63b464d0a1f92a7900c474.unityweb",
+"wasmCodeUrl": "0e30ae9771220efaf628a34d01ae01b7.unityweb",
+"wasmFrameworkUrl": "c1c96d930fc9faa70a99040bf50923b8.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.2.4f1"
+}
