@@ -4,12 +4,22 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | GridBeat</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>
     <script src="Build/9b952195ab79ef94f0feaae8cbb8d8ac.js"></script>
     <script>
-      UnityLoader.instantiate("unityContainer", "Build/40d8d311ce63a1e84f5f7e9eba98c050.json");
+      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/82fb206bdc06030610288cf03d6972b8.json", {onProgress: UnityProgress});
     </script>
   </head>
   <body>
-    <div id="unityContainer" style="width: 1600px; height: 900px; margin: auto"></div>
+    <div class="webgl-content">
+      <div id="unityContainer" style="width: 1600px; height: 900px"></div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+        <div class="title">GridBeat</div>
+      </div>
+    </div>
   </body>
 </html>
