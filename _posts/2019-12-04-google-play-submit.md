@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Last Blog Post"
+title:  "Final Update Before Expo."
 excerpt_separator: <!--more-->
 ---
 
